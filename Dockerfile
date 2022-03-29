@@ -1,9 +1,8 @@
 FROM telegraf:latest
 
 # Install those:
-RUN apk add --no-cache \
-	nano \
-	ipmitool \
+RUN apt-get update && apt-get install -y \
+  ipmitool \
 
 # Replace telegraf sample config with our own config file
 COPY telegraf.conf /etc/telegraf/telegraf.conf
