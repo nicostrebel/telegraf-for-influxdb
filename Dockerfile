@@ -2,7 +2,7 @@ FROM telegraf:latest
 
 # Install those:
 RUN apt-get update && apt-get install -y \
-  ipmitool \
+  ipmitool
 
 # Replace telegraf sample config with our own config file
 COPY telegraf.conf /etc/telegraf/telegraf.conf
