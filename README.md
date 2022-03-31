@@ -1,4 +1,4 @@
-# telegraf-rancher
+# telegraf-influxdb
 Automate the telegraf base docker image
 This image is using InfluxDB_v2 as datastore.
 Theres also the IPMI-Tool activated to gather data from servers with it.
@@ -12,7 +12,7 @@ You need to have a working installation of InfluxDB with version 2.x
 TGR_CFG_DB_WEBADDRESS="http://127.0.0.1:8086"
 
 ### Name of the Organization
-TGR_CFG_DB_ORGANIZATION="Santis"
+TGR_CFG_DB_ORGANIZATION="Org"
 
 ### Name of the InfluxDB Bucket
 TGR_CFG_DB_BUCKET="InfluxDB2Bucket"
